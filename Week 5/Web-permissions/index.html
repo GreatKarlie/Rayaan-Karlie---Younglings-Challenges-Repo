@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+        <h1>The web permissions showcase</h1>
+            <div> 
+                <input type="file" id="upload" onchange="handleImageUpload()">
+                <img id="display-image" src="">
+                
+            </div> <br><br>
+            <div>
+            <button onclick="mic()">ACTIVATE MICROPHONE</button>
+        </div><br><br>
+         <!--  <div>
+                <button onclick="webCamera()">WEBCAM</button> <br><br>
+                <video autoplay="true" id="videoElement"></video>
+            </div>--> 
+   <br><br>  
+    <div>
+        <button id="findMe" onclick="getLocation()">Get location</button>
+        <p id="feedback"></p> <br> <button onclick="messageMe()">Notifications</button>
+    </div>
+   
+</div>
+    </div>
+</body>
+</html>
