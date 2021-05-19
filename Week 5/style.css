@@ -1,0 +1,17 @@
+body{
+    width: 100%;
+    display: flex;
+}
+
+ul li {
+    justify-content: right; 
+}
+
+.sidebar{
+    
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+} 
+
