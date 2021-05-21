@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+body{
+
+ 
+    font-family: 'Roboto',sans-serif;
+}
+
+/*NAVIGATION SECTION*/
+    
+.nav-section{
+    background:url("reading_adults.jpg");
+    background-size:cover;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 5;
+  padding: 10;
+  overflow: hidden;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 80%;
+}
+
+nav li{
+    cursor: pointer;
+    color: rgb(66, 20, 66); 
+    border:  solid white;
+}
+
+nav li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+.container{
+    display: flex;
+    
+    flex-direction: column;
+}
+
+/*.nav-section{
+    border: 5px solid black;
+}
+*/
+
+#logo img{
+    height: 250px;
+    width: 250px;
+    border-radius: 200px;
+    border: 5px solid rgba(124, 26, 26, 0.877);
+}
+
+#donateSection button :hover{
+    background-color: rgb(102, 25, 102);
+    color: white;    
+}
+
+#donateSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#donateSection h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 72px;
+}
+
+#donateSection button{
+box-sizing: border-box;
+appearance: none;
+background-color: white;
+color: rgb(102, 25, 102);
+font-size: large;
+cursor: pointer;
+margin: 20px;
+padding: 1.2em 2.8em;
+border-radius: 50px;
+border: transparent;
+}
+
+/*ABOUT SECTION*/
+
+#aboutUs{
+    background-color: whitesmoke;
+    display: flex;
+    padding: 10px;
+}
+
+#aboutUs h2{
+ color: purple;
+}
+
+#aboutUs h4{
+    color: purple;
+}
+   
+#missionAU{
+max-width: 1000px;
+}
+
+#visionAU{
+max-width: 1000px;
+}
+
+#expertiseAU{
+    max-width: 1500px;
+    padding: 20px;
+    
+}
+
+#missionAU img{
+width: 35px;
+height: 40px;
+}
+
+#visionAU img{
+width: 35px;
+height: 40px;
+}
+
+#harold{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+#beneficiaryAU{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: purple;
+}
+
+#beneficiaryAU img{
+    border-radius: 50px;
+}
+
+/*SPONSORS SECTION*/
+ 
+#sponsors{
+    background-color: rgba(128, 0, 128, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 5px solid black;
+    width: 100%;
+    color: white;
+    padding: 15px;
+}
+
+
+/*Slideshow*/
+.slideshow{
+    display: flex;  
+    overflow: hidden;
+    height: 500px;
+    width: 800px;
+    border: 2px solid white;
+}
+
+#pics{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#pics img{
+    width: 20%;
+    float: left;
+}
+
+@keyframes slideshow{
+0%{
+    left: 0;
+    }
+
+20%{
+    left: 0;
+    }
+
+25%{
+    left: -100%;
+    }
+
+45%{
+    left: -100%;
+    }
+
+50%{
+    left: -200%;
+    }
+
+70%{
+    left: -200%;
+    }
+
+75%{
+    left: -300%;
+    }
+
+95%{
+    left: -300%;
+    }   
+
+100%{
+    left: -400%;
+    }
+
+}
+
+/*NEWSLETTER SECTION*/
+#newsLetter{
+    border: 5px solid black;
+    width: 100%;
+    height: 250px;
+}
+
+#topped{
+    display: flex;
+}
+
+
+
+
