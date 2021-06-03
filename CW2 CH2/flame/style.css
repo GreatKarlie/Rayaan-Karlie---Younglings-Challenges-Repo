@@ -1,0 +1,137 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(199, 195, 195);
+}
+
+.container {
+    width: auto;
+    height: auto;
+}
+
+.candle {
+    width: 300px;
+    height: 300px;
+    border-radius: 0 0 200px 200px;
+    background-color: rgb(86, 241, 66);
+    background-image: linear-gradient(45deg, rgba(238, 114, 57, 0.3), rgba(248, 168, 20, .1));
+    position: relative;
+    transition: all .4s;
+    animation: ani 3s infinite alternate-reverse;
+}
+
+@keyframes ani {
+    0% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.candle::after {
+    content: "|";
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: -30px;
+    height: 60px;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgb(115, 206, 63);
+    box-shadow: 1px 3px 10px rgb(3, 3, 3);
+}
+
+.flame {
+    position: absolute;
+    z-index: 9999;
+    border-radius: 200px 0px 200px 200px;
+    filter: blur(1px);
+}
+
+.flame.a {
+    top: -55px;
+    left: 41%;
+    transform: translateX(50%);
+    box-shadow: 0px 0px 80px 10px white;
+    width: 50px;
+    height: 50px;
+    transform: rotate(-45deg) skew(-10deg, -10deg);
+    background: rgba(236, 46, 12, 0.9);
+    animation: flam 2s infinite alternate-reverse;
+}
+
+@keyframes flam {
+    0% {
+        transform: rotate(-45deg) skew(-10deg, -10deg);
+    }
+    20% {
+        transform: rotate(-46deg) skew(-12deg, -12deg) scale(1.01);
+    }
+    40% {
+        transform: rotate(-45deg) skew(-10deg, -10deg);
+    }
+    60% {
+        transform: rotate(-43deg) skew(-11deg, -11deg) scale(1.01);
+    }
+    80% {
+        transform: rotate(-45deg) skew(-10deg, -10deg);
+    }
+    90% {
+        transform: rotate(-47deg) skew(-12deg, -12deg) scale(1.01);
+    }
+    100% {
+        transform: rotate(-45deg) skew(-10deg, -10deg);
+    }
+}
+
+.flame.b {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(245, 87, 25);
+    box-shadow: 0px 0px 80px 10px rgb(248, 161, 103);
+    bottom: 0;
+    left: 2px;
+}
+
+.flame.c {
+    width: 30px;
+    height: 30px;
+    left: 1px;
+    bottom: 0;
+    background-image: -webkit-linear-gradient(45deg, black, white, rgb(241, 125, 29), darkorange);
+}
+
+.shado {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(34, 34, 34, .4);
+    filter: blur(2px);
+    border-radius: 50%;
+    margin-top: 20px;
+    animation: size 3s infinite alternate-reverse;
+}
+
+@keyframes size {
+    0% {
+        transform: scale(.7);
+    }
+    100% {
+        transform: scale(.9);
+    }
+}
